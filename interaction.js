@@ -407,24 +407,24 @@ function update() {
 	}
 	
 	// Show webkit-friendly version, if needed
-    var webkitWarning = $('header > p');
-    
-	if (!bezier.inRange) {
-		var webkitBezier = bezier.clipped;
-		
-		webkitWarning.style.maxHeight = '3em';
-		$('a', webkitWarning).tabIndex = '0';
-		
-		$('code', webkitWarning).textContent = webkitBezier;
-		
-		if (prefix === '-webkit-') {
-			webkitBezier.applyStyle(current);
-		}
-	} 
-    else {
-        webkitWarning.style.maxHeight = '';
-        $('a', webkitWarning).tabIndex = '-1';
-    }
+//    var webkitWarning = $('header > p');
+//    
+//	if (!bezier.inRange) {
+//		var webkitBezier = bezier.clipped;
+//		
+//		webkitWarning.style.maxHeight = '3em';
+//		$('a', webkitWarning).tabIndex = '0';
+//		
+//		$('code', webkitWarning).textContent = webkitBezier;
+//		
+//		if (prefix === '-webkit-') {
+//			webkitBezier.applyStyle(current);
+//		}
+//	} 
+//    else {
+//        webkitWarning.style.maxHeight = '';
+//        $('a', webkitWarning).tabIndex = '-1';
+//    }
 }
 
 // For actions that can wait
