@@ -422,8 +422,8 @@ function update() {
 		}
 	}
 	else {
-		webkitWarning.style.maxHeight = '';
-		$('a', webkitWarning).tabIndex = '-1';
+        // if Y exceeds 1 or -1
+        alert("yo");
 	}
 }
 
