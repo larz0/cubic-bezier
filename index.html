@@ -18,12 +18,13 @@
 		 id="P2y" class="param">1</span></span>)</code></a>
 		<button id="save">Save</button>
 	</h1>
+    <p><strong>This curve contains values out of range.</strong> But fear not young padawan! Just use <code>a fallback</code> as well for Webkit until the <a href="https://bugs.webkit.org/show_bug.cgi?id=45761">bug #45761</a> fix propagates to Safari.</p>
 </header>
 
 <div class="coordinate-plane"> 
 	<span class="control-point" id="P0"></span> 
-	<button class="control-point" id="P1" style="left:50px; top: 250px;"></button>
-	<button class="control-point" id="P2" style="left:250px; top: 250px;"></button>
+	<button class="control-point" id="P1" style="left:50px; top: 150px;"></button>
+	<button class="control-point" id="P2" style="left:150px; top: 150px;"></button>
 	<span class="control-point" id="P3"></span>
 
 	<canvas height="400" width="200" id="curve"></canvas>
@@ -35,7 +36,6 @@
             Preview
             <button id="go">&#9654;</button>	
         </h1>
-        <p><strong>This curve contains values out of range.</strong> But fear not young padawan! Just use <code>a fallback</code> as well for Webkit until the <a href="https://bugs.webkit.org/show_bug.cgi?id=45761">bug #45761</a> fix propagates to Safari.</p>
         <div>
             <!-- <label for="duration">Duration:</label> -->
             <input type="range" id="duration" value="1" min="0.1" max="10" step="0.1" pattern="\d*\.?\d+" size="3" />
@@ -51,8 +51,10 @@
 <section id="library">
 	<h1>
 		Library
-		<button id="import">Import</button>
-		<button id="export">Export</button>
+		<span class="button-group">
+            <button id="import">Import</button>
+            <button id="export">Export</button>
+		</span>
 	</h1>	
 	<form id="importexport">
 		<label for="json">To import curves, paste the code below and click “Import”</label>

@@ -49,7 +49,7 @@ var self = window.bezierLibrary = {
 			a = document.createElement('a').prop({
 				href: '#' + bezier.coordinates,
 				bezier: bezier,
-				bezierCanvas: new BezierCanvas(canvas, bezier, 0.15)
+				bezierCanvas: new BezierCanvas(canvas, bezier, .15)
 			});
 		
 		if(!bezier.applyStyle) console.log(bezier);
@@ -106,7 +106,7 @@ var self = window.bezierLibrary = {
 		compareCanvas.bezier = this.bezier;
 		
 		compareCanvas.plot({
-			handleColor: 'rgba(0,0,0,0.36)',
+			handleColor: 'rgba(0,0,0,.36)',
 			bezierColor: '#454545',
 			handleThickness: .03,
 			bezierThickness: .08
@@ -132,16 +132,16 @@ var self = window.bezierLibrary = {
 	},
 	
 	thumbnailStyle: {
-		handleColor: 'rgba(0,0,0,0.36)',
-		handleThickness: 0.018,
-		bezierThickness: 0.08
+		handleColor: 'rgba(0,0,0,.36)',
+		handleThickness: .018,
+		bezierThickness: .08
 	},
 	
 	thumbnailStyleSelected: {
-		handleColor: 'rgba(0,0,0,0.36)',
+		handleColor: 'rgba(0,0,0,.36)',
 		bezierColor: '#454545',
-		handleThickness: 0.018,
-		bezierThickness: 0.08
+		handleThickness: .018,
+		bezierThickness: .08
 	}
 };
 
