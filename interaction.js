@@ -309,7 +309,7 @@ go.onclick = function() {
 
 duration.oninput = function() {
 	var val = getDuration();
-	this.nextElementSibling.textContent = val + ' second' + (val == 1? '' : 's');
+	this.nextElementSibling.textContent = val + 's';
 	current.style.setProperty(prefix + 'transition-duration', val + 's', null);
 	compare.style.setProperty(prefix + 'transition-duration', val + 's', null);
 };

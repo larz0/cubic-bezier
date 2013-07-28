@@ -29,11 +29,11 @@
 #preview > canvas,
 #library > a,
 header > p {
-	-moz-transition: 1s;
-	-ms-transition: 1s;
-	-o-transition: 1s;
-	-webkit-transition: 1s;
-	transition: 1s;	
+	-moz-transition: 0.12s;
+	-ms-transition: 0.12s;
+	-o-transition: 0.12s;
+	-webkit-transition: 0.12s;
+	transition: 0.12s;	
 }
 
 #cb-code > a {
@@ -53,13 +53,19 @@ code {
  */
 body {
     background: #dfe2e2;
+    color: #454545;
 	position: relative;
-	padding-left: 370px; 
+	padding: 20px 20px 20px 280px; 
 	font-family: 'Source Sans Pro', 'Helvetica Neue', sans-serif;
 }
 
+h1 {
+    font-size: 14px;
+    line-height: 20px;
+}
+
 a { 
-	color: #f08;
+	color: #0083e8;
 }
 
 a:hover { 
@@ -73,6 +79,7 @@ button, .button {
     box-shadow: inset 0 1px 0 #fff;
     color: #454545;
 	font-size: 11px;
+    margin: 0 0 0 3px;
     padding: 1px 10px 3px;
     vertical-align: middle;
 }
@@ -97,7 +104,7 @@ input[type="range"] {
 	}
 	
 	input[type="range"]:in-range {
-		width: 200px;
+		width: 100px;
 	}
 
 header > p {
@@ -243,7 +250,11 @@ canvas#curve {
 }
 
 section {
-	margin: 2em 0;
+    border: 1px solid black;
+    border-radius: 4px;
+	margin: 10px 0;
+    padding: 10px;
+    overflow: hidden;
 }
 
 	section > h1 {
@@ -252,6 +263,7 @@ section {
 	}
 	
 	section > h1 + p {
+        font-size: 12px;
 		margin: -.5em 0 1em 0;
 		color: #454545;
 	}
@@ -277,7 +289,8 @@ section {
 		left: 0;
 		margin-bottom: .5em;
 		background: #fff;
-		border-radius: 5px;
+		border-radius: 3px;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.24);
 	}
 	
 	#preview > #current { 
@@ -291,11 +304,10 @@ section {
 #library > a {
 	position: relative;
 	float: left;
-	width: 100px;
 	margin: 0 .8em 1em 0;
 	color: #999;
-	text-align: center;
 	text-decoration: none;
+    width: 120px;
 	
 }
 	#library > a > canvas,
@@ -308,17 +320,18 @@ section {
 	}
 
 	#library > a > canvas { 
-		display: block;
+		float: left;
 		position: relative; 
 		left: 0;
 		background: #fff;
-		
+		border: 1px solid #9c9e9e;
 		border-radius: 3px;
 	}
 
 	#library > a > span {
-		display: block;
-        font-size: 13px;
+        font-size: 12px;
+        line-height: 30px;
+        margin: 0 0 0 5px;
 		overflow: hidden;
 		white-space: nowrap;
 		text-overflow: ellipsis;
