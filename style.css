@@ -316,14 +316,16 @@ section {
 	}
 
 #library > a {
+    border-radius: 3px;
+    color: #454545;
 	position: relative;
 	float: left;
 	margin: 0 .8em 1em 0;
-	color: #999;
+    padding: 1px 1px 0 1px;
 	text-decoration: none;
     width: 120px;
-	
 }
+
 	#library > a > canvas,
 	#library > a > span {
 		-moz-transition: inherit;
@@ -343,8 +345,8 @@ section {
 	}
 
 	#library > a > span {
-        font-size: 12px;
-        line-height: 30px;
+        font-size: 13px;
+        line-height: 33px;
         margin: 0 0 0 5px;
 		overflow: hidden;
 		white-space: nowrap;
@@ -352,18 +354,21 @@ section {
 	}
 	
 	#library > a > button {
+        background: #fff;
+        border: none;
+        box-shadow: none;
+        color: rgba(0, 0, 0, 0.5);
 		display: none;
+        padding: 0 3px 3px;
 		position: absolute;
-		top: -5px;
-		right: -5px;
-		background: black;
-		font-size: 80%;
-		border-radius: 50%;
-		box-shadow: 1px 1px 8px -1px black;
+		top: 7px;
+		right: 5px;
+		font-size: 13px;
+        width: 16px;
 	}
 	
 	#library > a > button:hover {
-		background: #f08;
+        color: #000;
 	}
 	
 	#library > a:hover > button,
@@ -372,12 +377,17 @@ section {
 	}
 	
 #library > a.selected {
-    box-shadow: 0 0 0 3px #288edf;
+    background-color: #fff;
+    color: #000;
 }
 	
 		#library > a.selected > canvas {
 			background: #fff;
 		}
+
+        #library > a:hover {
+            background-color: rgba(255, 255, 255, 0.36);
+        }
 
 #importexport {
 	position: fixed;

@@ -107,9 +107,9 @@ var self = window.bezierLibrary = {
 		
 		compareCanvas.plot({
 			handleColor: 'rgba(0,0,0,0.36)',
-			bezierColor: '#1461FC',
+			bezierColor: '#454545',
 			handleThickness: .03,
-			bezierThickness: .06
+			bezierThickness: .08
 		});
 	},
 	
@@ -139,7 +139,7 @@ var self = window.bezierLibrary = {
 	
 	thumbnailStyleSelected: {
 		handleColor: 'rgba(0,0,0,0.36)',
-		bezierColor: '#1461FC',
+		bezierColor: '#454545',
 		handleThickness: 0.018,
 		bezierThickness: 0.08
 	}
@@ -395,7 +395,7 @@ function update() {
 		handleColor: 'rgba(255,255,255,.5)',
 		bezierColor: '#fff',
 		handleThickness: .03,
-		bezierThickness: .06
+		bezierThickness: .08
 	});
 	
 	// Show cubic-bezier values
