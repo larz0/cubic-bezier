@@ -409,7 +409,7 @@ function update() {
 	// Show webkit-friendly version, if needed
     var webkitWarning = $('header > p');
     
-	if (!bezier.inRange) { //if 1 < y < -1
+	if (!bezier.inRange) {
 		var webkitBezier = bezier.clipped;
 		
 		webkitWarning.style.maxHeight = '3em';
@@ -422,8 +422,8 @@ function update() {
 		}
 	} 
     else {
--       webkitWarning.style.maxHeight = '';
--       $('a', webkitWarning).tabIndex = '-1';
+        webkitWarning.style.maxHeight = '';
+        $('a', webkitWarning).tabIndex = '-1';
     }
 }
 
