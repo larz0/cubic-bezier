@@ -151,7 +151,7 @@ self.prototype = {
 		var defaultSettings = {
 			handleColor: 'rgba(0,0,0,.6)',
 			handleThickness: .008,
-			bezierColor: 'black',
+			bezierColor: '#0940fd',
 			bezierThickness: .02
 		};
 		
