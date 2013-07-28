@@ -406,10 +406,8 @@ function update() {
 		params[i].textContent = prettyOffsets[i]; 
 	}
 	
-	// Show webkit-friendly version, if needed
-	var webkitWarning = $('header > p');
-	
-	if (!bezier.inRange) {
+	// Show webkit-friendly version, if needed	
+	if (!bezier.inRange) { //if 1 < y < -1
 		var webkitBezier = bezier.clipped;
 		
 		webkitWarning.style.maxHeight = '3em';
@@ -420,10 +418,6 @@ function update() {
 		if (prefix === '-webkit-') {
 			webkitBezier.applyStyle(current);
 		}
-	}
-	else {
-        // if Y exceeds 1 or -1
-        alert("yo");
 	}
 }
 
