@@ -40,7 +40,9 @@ header > p {
 
 #importexport > textarea,
 code {
-	font-family: Consolas, 'Andale Mono', monospace;
+	font-family: 'Source Code Pro', monospace;
+    font-size: 14px;
+    font-weight: 500;
 }
 
 /**
@@ -48,20 +50,8 @@ code {
  */
 body { 
 	position: relative;
-	margin: 1em 5% 0;
-	padding-left: 330px; 
-	background: white;
-	font-family: 'Hiragino Kaku Gothic Pro', 'Segoe UI', 'Apple Gothic', Tahoma, 'Helvetica Neue', sans-serif;
-	line-height: 1.4;
-}
-
-h1 { 
-	font-size: 220%;
-}
-
-h2 { 
-	font-size: 16px;
-	margin: 20px 0 0 0;
+	padding-left: 370px; 
+	font-family: 'Source Sans Pro', Tahoma, 'Helvetica Neue', sans-serif;
 }
 
 a { 
@@ -72,40 +62,23 @@ a:hover {
 	text-decoration: none;
 }
 
-	h1 > a {
-		color: inherit;
-		text-decoration: none;
-	}
-
 button, .button {
-	padding: .3em .5em;
-	border: 0;
 	background: #ccc;
+    border: 0;
 	color: white;
-	font-size: 50%;
-	text-transform: uppercase;
-	vertical-align: .25em;
-	cursor: pointer;
-	border-radius: .3em;
-}
-
-button:hover, .button:hover {
-	background: #f08;
-}
-
-button:focus, .button:focus {
-	box-shadow: 0 0 5px 2px yellow;
+	font-size: 13px;
+	border-radius: 3px;
 }
 
 input[type="range"] {
 	-webkit-appearance: none;
 	overflow: hidden;
-	border: 1px solid #ddd;
-	background: #eee;
+	border: 1px solid #d7d7d7;
+	background: #f7f7f7;
 	text-align: center;
 	font: inherit;
-	border-radius: 99px;
-	box-shadow: 1px 1px 3px rgba(0,0,0,.5) inset;
+	border-radius: 3px;
+	box-shadow: 0px 1px 2px rgba(0,0,0,0.1) inset;
 }
 
 	input[type="range"]::-webkit-slider-thumb {
@@ -113,20 +86,12 @@ input[type="range"] {
 		background: #f8b;
 		height: 13px;
 		width: 13px;
-		border-radius: 50%;
-		box-shadow: -1px -1px 5px rgba(0,0,0,.5) inset,
-			-1px -1px 4px 3px #f08 inset,
-			1px 1px 3px rgba(0,0,0,.3),
-			-199px 0 0 198px rgba(255, 0, 136, .2);
+		border-radius: 2px;
 	}
 	
 	input[type="range"]:in-range {
-		width: 14em;
+		width: 200px;
 	}
-	
-header > h1 {
-	white-space: nowrap;
-}
 
 header > p {
 	max-height: 0;
@@ -145,7 +110,7 @@ header > p {
 .coordinate-plane { 
 	position: absolute;
 	top: 1em;
-	left: 0;
+	left: 40px;
 	line-height: 0;
 }
 	.coordinate-plane:before,
@@ -159,8 +124,7 @@ header > p {
 		-moz-box-sizing: border-box;
 		box-sizing: border-box;
 		
-		color: rgba(0,0,0,.6);
-		text-transform: uppercase;
+		color: #454545;
 		font-size: 75%;
 		line-height: 1;
 	}
@@ -168,7 +132,7 @@ header > p {
 	.coordinate-plane:before {
 		content: 'Progression';
 		
-		border-bottom: 1px solid;
+		border-bottom: 1px solid #d7d7d7;
 		
 		-moz-transform: rotate(-90deg);
 		-moz-transform-origin: bottom left;
@@ -184,7 +148,7 @@ header > p {
 	
 	.coordinate-plane:after {
 		content: 'Time';
-		border-top: 1px solid;
+		border-top: 1px solid #d7d7d7;
 		margin-bottom: -1.5em;
 	}
 	
@@ -471,37 +435,4 @@ body > footer {
 	-webkit-transform-origin: top right;
 	transform: rotate(-90deg);
 	transform-origin: top right;
-}
-
-	body > footer > a {
-		font-weight: bold;
-	}
-	
-	body > footer > a:not(:hover) {
-		color: inherit;
-	}
-	
-	body > footer > a.button {
-		padding: .5em .6em;
-		color: white;
-		text-decoration: none;
-		font-size: 65%;
-		background: #ddd;
-	}
-	
-.twitter-share-button {
-	position: fixed;
-	top: 10px;
-	right: 10px;
-}
-	
-@media (min-width:1330px) {
-	#preview {
-		float: left;
-		width: 400px;
-	}
-	
-	#library {
-		margin-left: 490px;
-	}
 }
