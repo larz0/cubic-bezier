@@ -149,10 +149,10 @@ self.prototype = {
 			ctx = this.canvas.getContext('2d');
 		
 		var defaultSettings = {
-			handleColor: 'rgba(0,0,0,.6)',
-			handleThickness: .008,
-			bezierColor: '#0940fd',
-			bezierThickness: .02
+			handleColor: 'rgba(0,0,0,0.36)',
+			handleThickness: 0.02,
+			bezierColor: '#1461FC',
+			bezierThickness: 0.03
 		};
 		
 		settings || (settings = {});

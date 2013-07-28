@@ -24,9 +24,7 @@
 /**
  * Variables
  */
-* {
-	margin: 0;
-}
+* {	margin: 0; }
 
 #preview > canvas,
 #library > a,
@@ -278,7 +276,7 @@ section {
 	}
 	
 	#preview > #current { 
-		background: #288edf;
+		background: #1461FC;
 	}
 	
 	#preview > .move { 

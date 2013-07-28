@@ -43,13 +43,13 @@ var self = window.bezierLibrary = {
 	
 	add: function (name, bezier) {
 		var canvas = document.createElement('canvas').prop({
-				width:100,
-				height:100
+				width:30,
+				height:30
 			}),
 			a = document.createElement('a').prop({
 				href: '#' + bezier.coordinates,
 				bezier: bezier,
-				bezierCanvas: new BezierCanvas(canvas, bezier, .15)
+				bezierCanvas: new BezierCanvas(canvas, bezier, 0.15)
 			});
 		
 		if(!bezier.applyStyle) console.log(bezier);
@@ -106,8 +106,8 @@ var self = window.bezierLibrary = {
 		compareCanvas.bezier = this.bezier;
 		
 		compareCanvas.plot({
-			handleColor: 'rgba(255,255,255,.5)',
-			bezierColor: 'white',
+			handleColor: 'rgba(0,0,0,0.36)',
+			bezierColor: '#1461FC',
 			handleThickness: .03,
 			bezierThickness: .06
 		});
@@ -132,16 +132,16 @@ var self = window.bezierLibrary = {
 	},
 	
 	thumbnailStyle: {
-		handleColor: 'rgba(0,0,0,.3)',
-		handleThickness: .018,
-		bezierThickness: .032
+		handleColor: 'rgba(0,0,0,0.36)',
+		handleThickness: 0.018,
+		bezierThickness: 0.08
 	},
 	
 	thumbnailStyleSelected: {
-		handleColor: 'rgba(255,255,255,.6)',
-		bezierColor: 'white',
-		handleThickness: .018,
-		bezierThickness: .032
+		handleColor: 'rgba(0,0,0,0.36)',
+		bezierColor: '#1461FC',
+		handleThickness: 0.018,
+		bezierThickness: 0.08
 	}
 };
 
@@ -393,7 +393,7 @@ function update() {
 	
 	currentCanvas.plot({
 		handleColor: 'rgba(255,255,255,.5)',
-		bezierColor: 'white',
+		bezierColor: '#fff',
 		handleThickness: .03,
 		bezierThickness: .06
 	});
@@ -446,7 +446,7 @@ function updateDelayed() {
 	
 	faviconCtx
 		.clearRect(0,0,16,16)
-		.prop('fillStyle', '#0ab')
+		.prop('fillStyle', '#1461FC')
 		.roundRect(0, 0, 16, 16, 2)
 		.fill()
 		.drawImage(current, 0, 0, 16, 16);
@@ -454,5 +454,5 @@ function updateDelayed() {
 	
 	$('link[rel="shortcut icon"]').setAttribute('href', favicon.toDataURL());
 	
-	document.title = bezier + ' ✿ cubic-bezier.com';
+	document.title = bezier;
 }
