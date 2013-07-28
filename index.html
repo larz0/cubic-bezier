@@ -31,17 +31,21 @@
 </div>
 
 <section id="preview">
-	<h1>
-		Preview
-		<button id="go">Go!</button>
-        <span>
+	<div id="controls">
+        <h1>
+            Preview
+            <button id="go">Go!</button>	
+        </h1>
+        <div>
             <!-- <label for="duration">Duration:</label> -->
             <input type="range" id="duration" value="1" min="0.1" max="10" step="0.1" pattern="\d*\.?\d+" size="3" />
             <output for="duration">1s</output>
-        </span>		
-	</h1>
-	<canvas id="current" width="30" height="30"></canvas>
-	<canvas id="compare" width="30" height="30"></canvas>
+        </div>	    
+	</div>
+	<div id="animation">
+        <canvas id="current" width="30" height="30"></canvas>
+        <canvas id="compare" width="30" height="30"></canvas>
+	</div>
 </section>
 
 <section id="library">
