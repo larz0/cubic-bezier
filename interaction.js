@@ -406,7 +406,9 @@ function update() {
 		params[i].textContent = prettyOffsets[i]; 
 	}
 	
-	// Show webkit-friendly version, if needed	
+	// Show webkit-friendly version, if needed
+    var webkitWarning = $('header > p');
+    
 	if (!bezier.inRange) { //if 1 < y < -1
 		var webkitBezier = bezier.clipped;
 		
@@ -418,7 +420,11 @@ function update() {
 		if (prefix === '-webkit-') {
 			webkitBezier.applyStyle(current);
 		}
-	}
+	} 
+    else {
+-       webkitWarning.style.maxHeight = '';
+-       $('a', webkitWarning).tabIndex = '-1';
+    }
 }
 
 // For actions that can wait
