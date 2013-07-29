@@ -230,8 +230,7 @@ header > p {
 }
 
 canvas#curve {
-    background: url(grid.png) 0 repeat;
-    opacity: 0.69;
+    background: url(grid.png) -1px -100px repeat;
 /*
 	background: #f0f0f0;
 	background: -moz-linear-gradient(-45deg, transparent 49%, rgba(0,0,0,.1) 49%, rgba(0,0,0,.1) 51%, transparent 51%, transparent) center no-repeat,
