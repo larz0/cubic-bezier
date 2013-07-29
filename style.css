@@ -23,7 +23,6 @@
 
 * {	margin: 0; }
 
-#preview > canvas,
 #library > a,
 header > p {
 	-moz-transition: 0.12s;
@@ -31,6 +30,14 @@ header > p {
 	-o-transition: 0.12s;
 	-webkit-transition: 0.12s;
 	transition: 0.12s;	
+}
+
+#animation > canvas {
+	-moz-transition: 1s;
+	-ms-transition: 1s;
+	-o-transition: 1s;
+	-webkit-transition: 1s;
+	transition: 1s;	
 }
 
 #cb-code > a {
