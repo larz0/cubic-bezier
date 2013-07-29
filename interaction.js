@@ -309,8 +309,8 @@ go.onclick = function() {
 
 duration.oninput = function() {
 	var val = getDuration();
-	this.nextElementSibling.textContent = val + 's';
-	current.style.setProperty(prefix + 'transition-duration', val + 's', null);
+	this.nextElementSibling.textContent = val + 's'  + (val == 1? '' : '');
+    current.style.setProperty(prefix + 'transition-duration', val + 's', null);    
 	compare.style.setProperty(prefix + 'transition-duration', val + 's', null);
 };
 
@@ -407,24 +407,24 @@ function update() {
 	}
 	
 	// Show webkit-friendly version, if needed
-//    var webkitWarning = $('header > p');
-//    
+//	var webkitWarning = $('header > p');
+//
 //	if (!bezier.inRange) {
 //		var webkitBezier = bezier.clipped;
-//		
+//
 //		webkitWarning.style.maxHeight = '3em';
 //		$('a', webkitWarning).tabIndex = '0';
-//		
+//
 //		$('code', webkitWarning).textContent = webkitBezier;
-//		
+//
 //		if (prefix === '-webkit-') {
 //			webkitBezier.applyStyle(current);
 //		}
-//	} 
-//    else {
-//        webkitWarning.style.maxHeight = '';
-//        $('a', webkitWarning).tabIndex = '-1';
-//    }
+//	}
+//	else {
+//		webkitWarning.style.maxHeight = '';
+//		$('a', webkitWarning).tabIndex = '-1';
+//	}
 }
 
 // For actions that can wait
