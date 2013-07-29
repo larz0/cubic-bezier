@@ -265,6 +265,10 @@ section {
 	margin: 10px 0;
     padding: 13px 15px;
     overflow: hidden;
+    
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	user-select: none;    
 }
 
 	section h1 {
