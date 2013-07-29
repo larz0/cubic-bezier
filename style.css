@@ -109,7 +109,10 @@ header > p {
 		white-space: nowrap;
 	}
 
-.coordinate-plane { 
+.coordinate-plane {
+    background-color: #fff;
+	border: 1px solid #9c9e9e;    
+    border-radius: 4px;
 	position: absolute;
 	top: 1em;
 	left: 40px;
@@ -134,7 +137,7 @@ header > p {
 	.coordinate-plane:before {
 		content: 'Progression';
 		
-		border-bottom: 1px solid #d7d7d7;
+		border-bottom: 1px solid transparent;
 		
 		-moz-transform: rotate(-90deg);
 		-moz-transform-origin: bottom left;
@@ -150,7 +153,7 @@ header > p {
 	
 	.coordinate-plane:after {
 		content: 'Time';
-		border-top: 1px solid #d7d7d7;
+		border-top: 1px solid transparent;
 		margin-bottom: -1.5em;
 	}
 	
@@ -167,7 +170,7 @@ header > p {
 	z-index: 1;
 	height: 20px; 
 	width: 20px; 
-	border: 1px solid rgba(0,0,0,.3);
+	border: 1px solid #9c9e9e;
 	margin: -10px 0 0 -10px;
 	outline: none;
 	
@@ -179,16 +182,22 @@ header > p {
 }
 
 #P0, #P3 {
-	background: #d7d7d7;
+    background: #1461FC;
+    border-radius: 0;
+    border: none;
+    height: 12px;
+    width: 12px;
+    z-index: 1;
 }
 
 #P1, #P2 {
 	cursor: pointer;
+    z-index: 100;
 }
 
 #P0 { 
-	left: 0; 
-	top: 75%;
+	left: 4px; 
+	top: 304px;
 }
 
 #P1 { 
@@ -200,8 +209,8 @@ header > p {
 }
 
 #P3 { 
-	left: 100%; 
-	top: 25%;
+	right: -7px; 
+	top: 104px;
 }
 
 #P1x, #P1y { 
@@ -214,7 +223,11 @@ header > p {
     font-weight: 100;    
 }
 
-canvas#curve { 
+canvas#curve {
+/*
+    background: url(grid.png) -20px -121px no-repeat;
+*/
+/*
 	background: #f0f0f0;
 	background: -moz-linear-gradient(-45deg, transparent 49%, rgba(0,0,0,.1) 49%, rgba(0,0,0,.1) 51%, transparent 51%, transparent) center no-repeat,
 		-moz-repeating-linear-gradient(white, white 20px, transparent 20px, transparent 40px) no-repeat,
@@ -233,6 +246,7 @@ canvas#curve {
 		linear-gradient(transparent, rgba(0,0,0,.06) 25%, rgba(0,0,0,.06) 75%, transparent);
 	background-size: 100% 50%, 100% 50%, auto;
 	background-position: 25%, 0, 0;
+*/
 	
 	-moz-user-select: none;
 	-webkit-user-select: none;
