@@ -437,10 +437,14 @@ section {
 	border-radius: 5px;
     box-shadow: inset 0 1px 0 #fff, 0 6px 15px rgba(0, 0, 0, 0.15);
     text-align: right;
+    -webkit-transform: scale(1);
+    transition: all 0.36s cubic-bezier(0,.74,.38,.99);
 }
 
 #importexport:not([class]) {
-	display: none;
+    -webkit-transform: translateZ(0) scale(0.36);
+    opacity: 0;
+    pointer-events: none;
 }
 
 	#importexport > label {
