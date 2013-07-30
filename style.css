@@ -44,7 +44,7 @@ header > p {
     color: #454545;
     font-size: 18px;
     text-decoration: none;
-    cursor: default;
+    cursor: text;
 }
 
 #importexport > textarea,
